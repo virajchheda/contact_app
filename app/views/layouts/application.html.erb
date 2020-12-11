@@ -2,13 +2,23 @@
 <html>
   <head>
     <title>ContactApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag    'main' %>
+      <%= stylesheet_link_tag    'util' %>
+
+      <%= javascript_include_tag "vendor/jquery/jquery-3.2.1.min.js" %>
+      <%= javascript_include_tag "vendor/animsition/js/animsition.min.js" %>
+      <%= javascript_include_tag "vendor/bootstrap/js/popper.js" %>
+      <%= javascript_include_tag "vendor/bootstrap/js/bootstrap.min.js" %>
+      <%= javascript_include_tag "vendor/select2/select2.min.js" %>
+      <%= javascript_include_tag "vendor/daterangepicker/moment.min.js" %>
+      <%= javascript_include_tag "vendor/daterangepicker/daterangepicker.js" %>
+      <%= javascript_include_tag "vendor/countdowntime/countdowntime.js" %>
   </head>
-
   <body>
     <%= yield %>
   </body>
