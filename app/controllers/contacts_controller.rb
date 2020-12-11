@@ -7,10 +7,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     respond_to do |format|
       if @contact.save
+        ContactMailer.send_contact_details(@contact).deliver_now
         format.html { redirect_to root_path, notice: 'Form successfully submitted. Thank You!' }
       else
-        @notice = "not submitted"
-        format.html { redirect_to root_path, notice: @contacts.errors.full_messages }
+        format.html { redirect_to root_path, notice: @contact.errors.full_messages }
       end
     end
   end
