@@ -5,20 +5,12 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 2.6.3
 
-* System dependencies
+* Configuration - postgres db
 
-* Configuration
+* Setup instructions
 
-* Database creation
+```rails db:create```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```rails db:migrate```
