@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jquery-rails'
 gem "haml-rails", "~> 2.0"
+gem 'rspec-rails', '~> 3.9'
+gem 'rspec-activemodel-mocks'
+gem 'simplecov', require: false
