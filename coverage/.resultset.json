@@ -20,7 +20,6 @@
           2,
           2,
           2,
-          1,
           2,
           null,
           2,
@@ -34,9 +33,9 @@
           null,
           null,
           1,
-          3,
-          3,
-          3,
+          2,
+          2,
+          2,
           null,
           null,
           null
@@ -49,27 +48,13 @@
           null
         ]
       },
-      "/home/viraj/viraj_data/contact_app/app/models/contact.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/viraj/viraj_data/contact_app/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/home/viraj/viraj_data/contact_app/app/mailers/contact_mailer.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           null,
@@ -82,6 +67,25 @@
       "/home/viraj/viraj_data/contact_app/app/mailers/application_mailer.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/viraj/viraj_data/contact_app/app/models/contact.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/viraj/viraj_data/contact_app/app/models/application_record.rb": {
+        "lines": [
           1,
           1,
           null
@@ -116,6 +120,6 @@
         }
       }
     },
-    "timestamp": 1607894280
+    "timestamp": 1607896481
   }
 }

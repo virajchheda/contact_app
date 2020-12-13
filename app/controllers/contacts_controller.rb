@@ -9,7 +9,6 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     respond_to do |format|
       if @contact.save
-        ContactMailer.send_contact_details(@contact).deliver_now
         format.html { redirect_to root_path(params['locale']), notice: 'success_message' }
       else
         format.html { redirect_to root_path(params['locale']), alert: 'error_message' }
