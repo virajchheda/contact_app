@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
 
   def index
+     @locale = I18n.locale
   end
 
   def create
@@ -8,10 +9,10 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.save
         ContactMailer.send_contact_details(@contact).deliver_now
-        format.html { redirect_to root_path, notice: 'Form successfully submitted. Thank You!' }
+        format.html { redirect_to root_path(params['locale']), notice: 'success_message' }
       else
-        format.html { redirect_to root_path, notice: @contact.errors.full_messages }
-      end
+        format.html { redirect_to root_path(params['locale']), alert: 'error_message' }
+       end
     end
   end
 

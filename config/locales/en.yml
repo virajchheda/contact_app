@@ -1,33 +1,27 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  contacts:
+    index:
+      send_message_heading: "Send Us A Message"
+      submit_text: "Send Message"
+      name_field_text: "Tell us your name"
+      first_name_placeholder: "first name"
+      last_name_placeholder: "last name"
+      email_field_text: "Enter your email"
+      email_placeholder: "e.g. example@email.com"
+      phone_field_text: "Enter phone number"
+      phone_placeholder: "e.g. +1800000000"
+      message_field_text: "Message"
+      message_placeholder: "write us a message"
+      address_text: "Address"
+      lets_talk_text: "Lets Talk"
+      general_support_text: "General Support"
+
+      #error text
+      first_name_error_text: "type first name"
+      last_name_error_text: "type last name"
+      email_error_text: "valid email is required: ex@abc.xyz"
+      phone_error_text: "valid number is required: +1800000000 with 10 to 15 digits"
+      message_error_text: "message is required "
+
+      success_message: "Form successfully submitted. Thank You!"
+      error_message: "Form submission failed!"

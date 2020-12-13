@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %h1
+      Details of #{@contact.first_name} #{@contact.last_name} submitted,
+    %hr/
+    %p
+      Email: #{@contact.email}
+    %p
+      Message: #{sanitize @contact.message}
+    %p
+      Phone Number: #{@contact.phone_number.presence || '-'}

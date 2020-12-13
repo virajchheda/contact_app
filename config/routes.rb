@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-    root to: "contacts#index"
-    resources :contacts, only: [:index, :create]
+  scope "(:locale)" do
+    post 'contacts' => "contacts#create"
+    root to: "contacts#index", via: :all
+  end
 end
