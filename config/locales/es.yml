@@ -1,0 +1,27 @@
+es:
+  contacts:
+    index:
+      send_message_heading: "Mandanos un mensaje"
+      submit_text: "Enviar mensaje"
+      name_field_text: "Dinos tu nombre"
+      first_name_placeholder: "primer nombre"
+      last_name_placeholder: "apellido"
+      email_field_text: "Introduce tu correo electrónico"
+      email_placeholder: "p.ej. example@email.com"
+      phone_field_text: "Ingresa número telefónico"
+      phone_placeholder: "p.ej. +1800000000"
+      message_field_text: "Mensaje"
+      message_placeholder: "escríbenos un mensaje"
+      address_text: "Dirección"
+      lets_talk_text: "Hablemos"
+      general_support_text: "Apoyo general"
+
+      #error text
+      first_name_error_text: "escriba el nombre"
+      last_name_error_text: "escriba el apellido"
+      email_error_text: "se requiere un correo electrónico válido: ex@abc.xyz"
+      phone_error_text: "se requiere un número válido: +1800000000 con 10 a 15 dígitos"
+      message_error_text: "se requiere mensaje"
+
+      success_message: "Formulario entregado satisfactoriamente. Gracias!"
+      error_message: "Error al enviar el formulario!"
